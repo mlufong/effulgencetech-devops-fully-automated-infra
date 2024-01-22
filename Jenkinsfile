@@ -19,7 +19,7 @@ pipeline {
         stage('Git checkout') {
             steps {
                 echo 'Cloning project codebase...'
-                git branch: 'main', url: 'git@github.com:mlufong/effulgencetech-devops-fully-automated-infra.git'
+                git branch: 'main', url: 'https://github.com/mlufong/effulgencetech-devops-fully-automated-infra.git'
                 sh 'ls'
                 sh 'pwd'
             }
